@@ -1,13 +1,19 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #434140;
+  margin: 0px;
 }
-.container {
+.header-container {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+/* Header */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.6)
+    ),
     url(/img/header-image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +59,24 @@ header h3 {
   color: #272044;
   padding: 16px 32px;
 }
-@media (max-width: 800px) {
+
+/* Footer */
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(/img/footer-image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer p {
+  margin-bottom: 0px;
+}
+
+/* Responsivness */
+@media (max-width: 960px) {
   header {
     padding: 70px 0px;
   }
