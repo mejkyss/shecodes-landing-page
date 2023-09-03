@@ -1,8 +1,68 @@
-h1 {
-  font-family: Poppins;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(/img/header-image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 200px 0px;
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+header h1 {
   font-size: 96px;
   font-weight: 700;
-  line-height: 144px;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
+  text-align: center;
+  margin: 20px 20px;
+}
+header h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.button-container {
+  text-align: center;
+}
+.learn-more-button {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  color: #272044;
+  padding: 16px 32px;
+}
+@media (max-width: 800px) {
+  header {
+    padding: 40px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 12px;
+  }
+  header h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
